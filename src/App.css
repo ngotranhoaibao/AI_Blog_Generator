@@ -1,0 +1,37 @@
+:root {
+  --foreground: #242424;           
+  --card: #ffffff;                
+  --card-foreground: #242424;      
+  --primary: #161616;               
+  --primary-foreground: #fafafa;   
+  --muted-foreground: #8c8c8c;    
+  --border: #ebebeb;                
+  --ring: #b3b3b3;                
+}
+.dark {
+  --foreground: #fafafa;        
+  --card: #343434;            
+  --card-foreground: #fafafa;   
+  --primary: #ebebeb;           
+  --primary-foreground: #343434;
+  --border: #ffffff1a;          
+  --ring: #8c8c8c;              
+}
+p{
+    color: var(--muted-foreground);
+}
+.bg-card{
+    background-color: var(--card);
+}
+.text-card-foreground{
+    color: var(--card-foreground);
+}
+.bg-primary{
+    background-color: var(--primary);
+}
+.text-primary-foreground{
+    color: var(--primary-foreground);
+}
+.border-border{
+    border-color: var(--border);
+}
