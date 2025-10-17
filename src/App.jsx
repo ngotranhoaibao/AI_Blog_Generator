@@ -94,12 +94,7 @@ function App() {
         </div>
       </div>
       <main className="container mx-auto px-4 py-12">
-        <div className="grid gap-6">
-          <div className="grid gap-6">
-            <h1 className="text-[32px] font-bold">Blog Editor</h1>
             <EditPage />
-          </div>
-        </div>
       </main>
     </div>
   );
