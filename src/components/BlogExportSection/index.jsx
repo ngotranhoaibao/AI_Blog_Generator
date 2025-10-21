@@ -2,12 +2,14 @@ import React from "react";
 import { Button } from "../ui/button";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { toast } from "react-hot-toast";
 const BlogExportSection = ({ handleShowResult, handleCopy, valueInput }) => {
   const changeWhiteSpaceToDash = (text) => {
     return text.replace(/\s+/g, "-");
   };
   const handleDownload = () => {
-    const nameFile=changeWhiteSpaceToDash(valueInput);
+    toast.success("Tải Xuống Thành Công!");
+    const nameFile = changeWhiteSpaceToDash(valueInput);
     // 1️⃣ Tạo blob từ nội dung
     const blob = new Blob([handleShowResult], { type: "text/plain" });
 

@@ -9,6 +9,7 @@ import {
   DialogFooter,
   DialogClose,
 } from "@/components/ui/dialog";
+import toast from "react-hot-toast";
 import { Button } from "@/components/ui/button";
 import useIsHistoryPage from "@/hooks/useIsHistoryPage";
 export function BlogDetailDialog({
@@ -26,6 +27,7 @@ export function BlogDetailDialog({
   console.log("isHistoryPage", isHistoryPage);
 
   const handleDownload = () => {
+    toast.success("Tải Xuống Thành Công!");
     // 1️⃣ Tạo blob từ nội dung
     const blob = new Blob([selected.result], { type: "text/plain" });
 

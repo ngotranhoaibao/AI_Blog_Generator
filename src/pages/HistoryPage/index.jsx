@@ -30,7 +30,7 @@ const HistoryPage = () => {
     await navigator.clipboard.writeText(
       blogHistories.find((item) => item.id === selectedId).result
     );
-    toast.success("Copied to clipboard!");
+    toast.success("Copy Thành Công!");
   };
   return (
     <div className="grid gap-6">
