@@ -28,7 +28,7 @@ const Header = () => {
         <div className="container mx-auto h-16 px-4 flex items-center justify-between">
           <Link
             className="flex items-center space-x-2"
-            href="/"
+            to="/"
             data-discover="true"
           >
             <svg
@@ -54,7 +54,7 @@ const Header = () => {
           <div className="flex items-center gap-2">
             <Link
               className="hover:text-primary"
-              href="/editor"
+              to="/editor"
               data-discover="true"
             >
               <button
@@ -66,7 +66,7 @@ const Header = () => {
             </Link>
             <Link
               className="hover:text-primary"
-              href="/history"
+              to="/history"
               data-discover="true"
             >
               <button
