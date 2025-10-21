@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Button } from "../ui/button";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [theme, setTheme] = React.useState(localStorage.getItem("theme") || "light");
   useEffect(() => {
@@ -26,7 +26,7 @@ const Header = () => {
       />
       <div className="border-b border-border ">
         <div className="container mx-auto h-16 px-4 flex items-center justify-between">
-          <a
+          <Link
             className="flex items-center space-x-2"
             href="/"
             data-discover="true"
@@ -49,10 +49,10 @@ const Header = () => {
             <span className="text-2xl font-bold text-primary opacity-0 sm:opacity-100">
               AI Blog Generator
             </span>
-          </a>
+          </Link>
 
           <div className="flex items-center gap-2">
-            <a
+            <Link
               className="hover:text-primary"
               href="/editor"
               data-discover="true"
@@ -63,8 +63,8 @@ const Header = () => {
               >
                 Editor
               </button>
-            </a>
-            <a
+            </Link>
+            <Link
               className="hover:text-primary"
               href="/history"
               data-discover="true"
@@ -75,7 +75,7 @@ const Header = () => {
               >
                 History
               </button>
-            </a>
+            </Link>
             <Button
               onClick={() =>
                 setTheme((prev) => (prev === "light" ? "dark" : "light"))
