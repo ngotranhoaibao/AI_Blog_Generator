@@ -2,7 +2,7 @@ import React from "react";
 import BlogTopicForm from "@/components/BlogTopicForm";
 import BlogExportSection from "@/components/BlogExportSection";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import useGetIp from "@/hooks/usegetIp";
+import useGetIp from "@/hooks/useGetIp";
 const EditorPage = () => {
   const [valueInput, setValueInput] = React.useState("");
   const [loading, setLoading] = React.useState(false);
