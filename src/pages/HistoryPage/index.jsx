@@ -35,7 +35,6 @@ const HistoryPage = () => {
   return (
     <div className="grid gap-6">
       <h1 className="text-3xl font-bold">Hi, here is your history</h1>
-      <div className="flex flex-col items-center justify-center gap-4 mt-20">
         {blogHistories.length === 0 ? (
           <div>
             <div style={{ width: 300, height: 300 }}>
@@ -66,7 +65,6 @@ const HistoryPage = () => {
           handleDeleteHistory={handleDeleteHistory}
           id={selectedId}
         />
-      </div>
     </div>
   );
 };
